@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://backend:8081/api';
+const API_BASE_URL = 'http://localhost:30002/api';
 
 // Get auth token from localStorage
 const getAuthToken = () => {
