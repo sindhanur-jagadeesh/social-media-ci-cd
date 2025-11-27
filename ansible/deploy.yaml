@@ -1,0 +1,12 @@
+---
+- name: Deploy to Kubernetes cluster
+  hosts: local
+  tasks:
+    - name: Apply MySQL Deployment
+      command: kubectl apply -f ../k8s/mysql.yaml
+
+    - name: Apply Backend Deployment
+      command: kubectl apply -f ../k8s/backend.yaml
+
+    - name: Apply Frontend Deployment
+      command: kubectl apply -f ../k8s/frontend.yaml
